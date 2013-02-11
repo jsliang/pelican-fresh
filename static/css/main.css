@@ -5,16 +5,16 @@
 */
 body { color: #333; font-size: 15px; font-family: "Lucida Sans", sans-serif; line-height: 1.5; margin: 0; padding: 0; text-align: left; }
 
-h1 { font-family: "Microsoft Yahei", Overlock, sans-serif; font-size: 16px; }
+h1 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-size: 16px; }
 
-h2 { font-family: Microsoft Yahei ", Overlock, sans-serif;
+h2 { font-family: Microsoft YaHei ", Overlock, sans-serif;
   font-size: 16px;
   font-weight: bold;
   color: #113D8B;
 }
 
 h3 {
-  font-family: Microsoft Yahei", Overlock, sans-serif; font-weight: bold; font-size: 16px; text-decoration: underline; color: #000; }
+  font-family: Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 16px; text-decoration: underline; color: #000; }
 
 hr { border: 2px solid #eeeeee; }
 
