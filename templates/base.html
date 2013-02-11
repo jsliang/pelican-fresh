@@ -38,9 +38,11 @@
                             <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
                         {% endfor %}
                         {% endif %}
+                        {% if DISPLAY_CATEGORIES_ON_MENU %}
                         {% for cat, null in categories %}
                             <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
                         {% endfor %}
+                        {% endif %}
                         </ul>
 
                         {% include 'google_custom_search.html' %}
