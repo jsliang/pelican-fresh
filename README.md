@@ -3,6 +3,10 @@
 Fresh is a responsive [Pelican](http://getpelican.com) theme.
 This theme uses HTML5 and its layout is responsive -- thanks to Smashing HTML5 and Twitter Bootstrap.
 
+## DEMO
+
+A [live demo](http://jsliang.com/pelican-fresh-demo/blog/) for the Fresh theme is available.
+
 ## Features
 
 *   Google Analytics
