@@ -4,15 +4,19 @@
 /* Name: Clean Date: February 2013 Description: A Pelican theme with clean layout. Based on Smashing HTML5 and Twitter Bootstrap. Version: 0.9.0 Author: Jui-Shan Liang Author URI: http://jsliang.com */
 body { color: #333; font-size: 15px; font-family: "Lucida Sans", sans-serif; line-height: 1.5; margin: 0; padding: 0; text-align: left; }
 
-h1 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-size: 16px; }
+h1 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 16px; line-height: 3; }
 
-h2 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-size: 16px; font-weight: bold; color: #113D8B; }
+h2 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 16px; color: #113D8B; line-height: 2; }
 
-h3 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 16px; text-decoration: underline; color: #000; }
+h3 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 16px; text-decoration: underline; color: #000; line-height: 1.5; }
+
+h4 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 15px; color: #000; }
+
+h5 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 15px; color: #777; }
+
+h6 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 15px; color: #666; }
 
 hr { border: 2px solid #eeeeee; }
-
-p { margin-bottom: 1.143em; }
 
 strong, b { font-weight: bold; }
 
@@ -84,4 +88,4 @@ li:last-child .hentry { border: 0; margin: 0; }
 code, pre { font-family: "PT Mono", sans-serif; }
 
 blockquote { border: 0; }
-blockquote p { font-size: 15px; margin-bottom: auto; font-weight: normal; }
+blockquote p { font-size: 15px; margin-bottom: 1em; font-weight: normal; }

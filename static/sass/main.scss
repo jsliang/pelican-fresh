@@ -22,32 +22,52 @@ body {
   text-align: left;
 }
 
-h1 {
+@mixin headings {
   font-family: "Microsoft YaHei", Overlock, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  @include headings;
   font-size: 16px;
+  line-height: 3;
 }
 
 h2 {
-  font-family: "Microsoft YaHei", Overlock, sans-serif;
+  @include headings;
   font-size: 16px;
-  font-weight: bold;
   color: #113D8B;
+  line-height: 2;
 }
 
 h3 {
-  font-family: "Microsoft YaHei", Overlock, sans-serif;
-  font-weight: bold;
+  @include headings;
   font-size: 16px;
   text-decoration: underline;
   color: #000;
+  line-height: 1.5;
+}
+
+h4 {
+  @include headings;
+  font-size: 15px;
+  color: #000;
+}
+
+h5 {
+  @include headings;
+  font-size: 15px;
+  color: #777;
+}
+
+h6 {
+  @include headings;
+  font-size: 15px;
+  color: #666;
 }
 
 hr {
   border: 2px solid #eeeeee;
-}
-
-p {
-  margin-bottom: 1.143em;
 }
 
 strong, b {
@@ -273,7 +293,7 @@ blockquote {
   border: 0;
   p {
     font-size: 15px;
-    margin-bottom: auto;
+    margin-bottom: 1em;
     font-weight: normal;
   }
 }
