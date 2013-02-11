@@ -36,7 +36,7 @@
                             <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
                         {% endfor %}
                         {% endif %}
-                        {% if DISPLAY_CATEGORIES_ON_MENU %}
+                        {% if not HIDE_CATEGORIES_FROM_MENU %}
                         {% for cat, null in categories %}
                             <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
                         {% endfor %}
@@ -61,13 +61,13 @@
                     <section id="sidebar">
                     {% if LINKS %}
                             <div>
-                                <h2>Blogroll</h2>
+                                <h2>Links</h2>
                                 <ul>
                                 {% for name, link in LINKS %}
                                     <li><a href="{{ link }}">{{ name }}</a></li>
                                 {% endfor %}
                                 </ul>
-                            </div><!-- /.blogroll -->
+                            </div><!-- /.Links -->
                     {% endif %}
                     {% if SOCIAL %}
                             <div>
