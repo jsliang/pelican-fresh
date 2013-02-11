@@ -36,12 +36,12 @@ The theme also provides these global variables:
 
     The Fresh theme allows you to use [Google Custom Search Engine](http://www.google.com/cse/) as the search engine for your static website!
 
-    Find the **search engine unique ID** of the search engine you set up in [Google Custom Search Engine's control panel](http://www.google.com/cse/manage/all).
-    Assign this ID to the `GOOGLE_CUSTOM_SEARCH` variable, and a Google custom search bar will appear in the navigation bar.
+    Find the **search engine unique ID** of your customized search engine in Google Custom Search Engine's [control panel](http://www.google.com/cse/manage/all).
+    Assign this ID to the `GOOGLE_CUSTOM_SEARCH` variable in your configuration, and a Google custom search bar will appear in the navigation bar.
 
 *   `HIDE_CATEGORIES_FROM_MENU = True`
 
-    If you want to hide categories from menu, you can do that by setting `HIDE_CATEGORIES_FROM_MENU` to `True`.
+    If you want to hide categories from menu, you can do so by setting `HIDE_CATEGORIES_FROM_MENU` to `True` in your configuration.
 
 
 ## License
