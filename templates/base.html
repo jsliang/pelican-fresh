@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>{% block title %}{%endblock%}{{ SITENAME }}</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap-responsive.min.css" type="text/css" />
+
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
+        {% if FEED_ALL_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+        {% endif %}
+        {% if FEED_ALL_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+        {% endif %}
+</head>
+
+<body id="index">
+{% include 'github.html' %}
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <header id="banner" >
+                <h1>
+                    <a href="{{ SITEURL }}/">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a>
+                </h1>
+                <nav class="navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+                        {% for title, link in MENUITEMS %}
+                            <li><a href="{{ link }}">{{ title }}</a></li>
+                        {% endfor %}
+                        {% if DISPLAY_PAGES_ON_MENU %}
+                        {% for page in PAGES %}
+                            <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+                        {% endfor %}
+                        {% endif %}
+                        {% for cat, null in categories %}
+                            <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                        {% endfor %}
+                        </ul>
+
+                        {% include 'google_custom_search.html' %}
+                    </div>
+                </nav>
+            </header><!-- /#banner -->
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <div class="row-fluid">
+                <div class="span10">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+                <div class="span2">
+                    <section id="sidebar">
+                    {% if LINKS %}
+                            <div>
+                                <h2>Blogroll</h2>
+                                <ul>
+                                {% for name, link in LINKS %}
+                                    <li><a href="{{ link }}">{{ name }}</a></li>
+                                {% endfor %}
+                                </ul>
+                            </div><!-- /.blogroll -->
+                    {% endif %}
+                    {% if SOCIAL %}
+                            <div>
+                                <h2>Social</h2>
+                                <ul>
+                                    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                                    {% if FEED_ALL_RSS %}
+                                    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate">rss feed</a></li>
+                                    {% endif %}
+
+                                {% for name, link in SOCIAL %}
+                                    <li><a href="{{ link }}">{{ name }}</a></li>
+                                {% endfor %}
+                                </ul>
+                            </div><!-- /.social -->
+                    {% endif %}
+                    </section><!-- /#sidebar -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="site-footer">
+        <div class="row">
+            <div class="span10 offset1">
+                <p>
+                    <address>
+                    This blog is proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                    </address>
+                    <address>
+                    Hosted on <a href="http://pages.github.com/">GitHub Pages</a>.
+                    </address>
+                </p>
+                <p>
+                    <address>
+                    Theme designed by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a> and modified by <a href="{{ SITEURL }}">{{ AUTHOR }}</a>.
+                    </address>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+{% include 'analytics.html' %}
+{% include 'piwik.html' %}
+{% include 'disqus_script.html' %}
+</body>
+</html>

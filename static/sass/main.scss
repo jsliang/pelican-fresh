@@ -1,0 +1,265 @@
+@import url("pygment.css");
+
+@import url(http://fonts.googleapis.com/css?family=Overlock:400,700,900);
+@import url(http://fonts.googleapis.com/css?family=PT+Mono);
+
+/*
+    Name: Clean
+    Date: February 2013
+    Description: A Pelican theme based on Smashing HTML5 and Twitter Bootstrap.
+    Version: 0.9.0
+    Author: Jui-Shan Liang
+    Author URI: http://jsliang.com
+*/
+
+body {
+  color: #333;
+  font-size: 15px;
+  font-family: "Lucida Sans", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+h1 {
+  font-family: "Overlock", sans-serif;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: "Overlock", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #113D8B;
+}
+
+h3 {
+  font-family: "Overlock", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #000;
+}
+
+hr {
+  border: 2px solid #eeeeee;
+}
+
+p {
+  margin-bottom: 1.143em;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+ul {
+  list-style: outside disc;
+  margin: 1em 0 1.5em 1.5em;
+}
+
+ol {
+  list-style: outside decimal;
+  margin: 1em 0 1.5em 1.5em;
+}
+
+.post-info {
+  font-size: 0.8em;
+  text-align: right;
+  margin-bottom: 1em;
+  address {
+    font-style: normal;
+    display: inline;
+  }
+}
+
+.readmore {
+  margin-top: 1em;
+}
+
+pre {
+  background-color: #eeeeee;
+  padding: 10px;
+  margin: 10px;
+  overflow: auto;
+}
+
+blockquote {
+  margin: 20px;
+  font-style: normal;
+}
+
+header, section, footer, aside, nav, article, figure {
+  display: block;
+}
+
+img.right, figure.right {
+  float: right;
+  margin: 0 0 2em 2em;
+}
+
+img.left, figure.left {
+  float: left;
+  margin: 0 2em 2em 0;
+}
+
+#banner {
+  margin: 0 auto;
+  padding: 2.5em 0 0 0;
+  h1 {
+    font-size: 4em;
+    font-family: 'Overlock';
+    line-height: 1;
+    text-align: center;
+    a {
+      &:link, &:visited {
+        color: #000305;
+        display: block;
+        font-weight: bold;
+        margin: 0 0 0.6em 0.2em;
+        text-decoration: none;
+      }
+      &:hover, &:active {
+        color: #113D8B;
+        text-shadow: 1px 1px #fff;
+      }
+    }
+  }
+  .nav > li > a {
+    font-family: "Overlock", sans-serif;
+    font-weight: bold;
+    &:hover {
+        text-shadow: 1px 1px #bbb;
+    }
+  }
+}
+
+#google-custom-search {
+  width: 300px;
+  float: right;
+  margin-top: 5px;
+  .gsc-control-cse {
+    padding: 0 !important;
+    border: 0 !important;
+    background-color: transparent !important;
+  }
+}
+
+#sidebar {
+  padding: 0.5em;
+}
+
+#site-footer {
+  text-align: right;
+  font-size: 0.8em;
+  address {
+    display: inline;
+  }
+}
+
+.hentry {
+  display: block;
+  clear: both;
+  border-bottom: 1px solid #eeeeee;
+  padding: 1.5em 0;
+}
+
+li:last-child .hentry {
+  border: 0;
+  margin: 0;
+}
+
+#content > .hentry {
+  border: 0;
+  margin: 0;
+  padding: 1em 0;
+}
+
+.hentry img {
+  display: none;
+}
+
+.entry-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  a {
+    &:link, &:visited {
+      text-decoration: none;
+      color: #333;
+    }
+    &:hover {
+      color: #113D8B;
+    }
+    &:visited {
+      background-color: #fff;
+    }
+  }
+}
+
+#posts-list {
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+}
+
+#comments-list {
+  list-style: none;
+  margin: 0 1em;
+  blockquote {
+    background: #f8f8f8;
+    clear: both;
+    font-style: normal;
+    margin: 0;
+    padding: 15px 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+  footer {
+    color: #888;
+    padding: 0.5em 1em 0 0;
+    text-align: right;
+  }
+  li:nth-child(2n) blockquote {
+    background: #F5f5f5;
+  }
+}
+
+#add-comment {
+  label {
+    clear: left;
+    float: left;
+    text-align: left;
+  }
+  input {
+    &[type='text'], &[type='email'], &[type='url'] {
+      float: left;
+    }
+  }
+  textarea {
+    float: left;
+    height: 150px;
+  }
+  p.req {
+    clear: both;
+    margin: 0 0.5em 1em 0;
+    text-align: right;
+  }
+  input[type='submit'] {
+    float: right;
+    margin: 0 0.5em;
+  }
+  * {
+    margin-bottom: .5em;
+  }
+}
+
+code, pre {
+  font-family: 'PT Mono', sans-serif;
+}
