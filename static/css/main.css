@@ -49,7 +49,7 @@ img.left, figure.left { float: left; margin: 0 2em 2em 0; }
 
 #sidebar { padding: 0.5em; }
 
-#site-footer { text-align: right; font-size: 0.8em; }
+#site-footer { text-align: right; font-size: 0.8em; padding: 1em; }
 #site-footer address { display: inline; }
 
 .hentry { display: block; clear: both; border-bottom: 1px solid #eeeeee; padding: 1.5em 0; }
@@ -66,6 +66,8 @@ li:last-child .hentry { border: 0; margin: 0; }
 .entry-title a:visited { background-color: #fff; }
 
 #posts-list { list-style: none; margin: 0; padding: 1em; }
+
+.paginator { padding-left: 1em; }
 
 #comments-list { list-style: none; margin: 0 1em; }
 #comments-list blockquote { background: #f8f8f8; clear: both; font-style: normal; margin: 0; padding: 15px 20px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
