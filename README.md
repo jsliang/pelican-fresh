@@ -24,8 +24,8 @@ The theme supports most Pelican built-in global variables, and some of them are 
 
 *   `GOOGLE_ANALYTICS`
 *   `DISQUS_SITENAME`
-*   `LINKS (('name1', 'url1'), ('name2', 'url2'))`
-*   `SOCIAL (('name1', 'url1'), ('name2', 'url2'))`
+*   `LINKS = (('name1', 'url1'), ('name2', 'url2'))`
+*   `SOCIAL = (('name1', 'url1'), ('name2', 'url2'))`
 *   `GITHUB_URL`
 
 Refer to [Pelican's documentation of settings](http://docs.getpelican.com/en/latest/settings.html) for description of these global variables.
