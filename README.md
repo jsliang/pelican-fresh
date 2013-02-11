@@ -5,7 +5,7 @@ This theme uses HTML5 and its layout is responsive -- thanks to Smashing HTML5 a
 
 ## DEMO
 
-You can watch the [live demo](http://jsliang.com/pelican-fresh-demo/blog/) for the Fresh theme.
+You can watch a [live demo](http://jsliang.com/pelican-fresh-demo/blog/) for the Fresh theme.
 
 ## Features
 
