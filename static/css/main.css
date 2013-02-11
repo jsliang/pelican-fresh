@@ -82,3 +82,6 @@ li:last-child .hentry { border: 0; margin: 0; }
 #add-comment * { margin-bottom: .5em; }
 
 code, pre { font-family: "PT Mono", sans-serif; }
+
+blockquote { border: 0; }
+blockquote p { font-size: 15px; margin-bottom: auto; font-weight: normal; }

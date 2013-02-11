@@ -268,3 +268,12 @@ li:last-child .hentry {
 code, pre {
   font-family: 'PT Mono', sans-serif;
 }
+
+blockquote {
+  border: 0;
+  p {
+    font-size: 15px;
+    margin-bottom: auto;
+    font-weight: normal;
+  }
+}
