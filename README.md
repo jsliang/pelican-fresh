@@ -16,7 +16,7 @@ This theme uses HTML5 and its layout is responsive -- thanks to Smashing HTML5 a
 
 ## Settings
 
-The Fresh theme supports most built-in global variables of Pelican. There are also theme-specific global variables that allow you to add a search bar or hide categories from menu.
+The Fresh theme supports most built-in global variables of Pelican. There are also theme-specific global variables that allow you to add a search bar or to hide categories from menu.
 
 ### Built-in Global Variables
 
