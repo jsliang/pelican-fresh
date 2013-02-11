@@ -5,12 +5,10 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="http://code.jquery.com/jquery.min.js"></script>
-        <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap-responsive.min.css" type="text/css" />
 
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" type="text/css" />
         {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
         {% endif %}
@@ -115,5 +113,7 @@
 {% include 'analytics.html' %}
 {% include 'piwik.html' %}
 {% include 'disqus_script.html' %}
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
 </body>
 </html>
