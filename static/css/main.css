@@ -1,7 +1,7 @@
 @import url("pygment.css");
 @import url(http://fonts.googleapis.com/css?family=Overlock:400,700,900);
 @import url(http://fonts.googleapis.com/css?family=PT+Mono);
-/* Name: Clean Date: February 2013 Description: A Pelican theme with clean layout. Based on Smashing HTML5 and Twitter Bootstrap. Version: 0.9.0 Author: Jui-Shan Liang Author URI: http://jsliang.com */
+/* Name: Fresh Date: February 2013 Description: A Pelican theme with clean layout. Based on Smashing HTML5 and Twitter Bootstrap. Version: 1.0.0 Author: Jui-Shan Liang Author URI: http://jsliang.com */
 body { color: #333; font-size: 15px; font-family: "Lucida Sans", sans-serif; line-height: 1.5; margin: 0; padding: 0; text-align: left; }
 
 h1 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 16px; line-height: 3; }
