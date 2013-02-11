@@ -1,7 +1,7 @@
 # Fresh: a responsive Pelican theme that uses HTML5
 
 Fresh is a responsive [Pelican](http://getpelican.com) theme.
-This theme uses HTML5 and its layout is responsive -- thanks to Smashing HTML5 and Twitter Bootstrap.
+This theme uses HTML5 and its layout is responsive -- thanks to [Smashing HTML5](http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/) and [Twitter Bootstrap](http://twitter.github.com/bootstrap/).
 
 You can watch a live demo for the Fresh theme [here](http://jsliang.com/pelican-fresh-demo/blog/).
 
