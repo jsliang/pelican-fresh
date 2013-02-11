@@ -10,7 +10,7 @@ This theme uses HTML5 and its layout is responsive -- thanks to Smashing HTML5 a
 *   Custom link lists
 *   Social widgets
 *   "Fork me on GitHub" ribbon
-*   **Google Custom Search Engine** -- you can use this as your search bar!
+*   **Google Custom Search Engine** -- use this as your search bar!
 *   **Hide categories from menu**
 *   Syntax highlighting for code blocks
 
@@ -36,7 +36,7 @@ The theme also provides these global variables:
 
 *   `GOOGLE_CUSTOM_SEARCH = 'your search engine unique ID'`
 
-    The Fresh theme allows you to use [Google Custom Search Engine](http://www.google.com/cse/) as the search engine for your static website!
+    The Fresh theme allows you to use [Google Custom Search Engine](http://www.google.com/cse/) as the search engine for your static website.
 
     Find the **search engine unique ID** of your customized search engine in Google Custom Search Engine's [control panel](http://www.google.com/cse/manage/all).
     Assign this ID to the `GOOGLE_CUSTOM_SEARCH` variable in your configuration, and a Google custom search bar will appear in the navigation bar.
