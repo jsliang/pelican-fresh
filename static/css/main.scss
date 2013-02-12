@@ -1,3 +1,5 @@
+$padding: 1em;
+
 @import url("pygment.css");
 
 @import url(http://fonts.googleapis.com/css?family=Overlock:400,700,900);
@@ -118,6 +120,10 @@ header, section, footer, aside, nav, article, figure {
   display: block;
 }
 
+section {
+  padding: $padding;
+}
+
 img.right, figure.right {
   float: right;
   margin: 0 0 2em 2em;
@@ -177,7 +183,7 @@ img.left, figure.left {
 #site-footer {
   text-align: right;
   font-size: 0.8em;
-  padding: 1em;
+  padding: $padding;
   address {
     display: inline;
   }
@@ -198,7 +204,7 @@ li:last-child .hentry {
 #content > .hentry {
   border: 0;
   margin: 0;
-  padding: 1em 0;
+  padding: $padding 0;
 }
 
 .hentry img {
@@ -226,11 +232,11 @@ li:last-child .hentry {
 #posts-list {
   list-style: none;
   margin: 0;
-  padding: 1em;
+  padding: $padding;
 }
 
 .paginator {
-  padding-left: 1em;
+  padding-left: $padding;
 }
 
 #comments-list {

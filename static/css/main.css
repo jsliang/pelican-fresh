@@ -37,6 +37,8 @@ blockquote { margin: 20px; font-style: normal; }
 
 header, section, footer, aside, nav, article, figure { display: block; }
 
+section { padding: 1em; }
+
 img.right, figure.right { float: right; margin: 0 0 2em 2em; }
 
 img.left, figure.left { float: left; margin: 0 2em 2em 0; }
