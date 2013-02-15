@@ -4,11 +4,14 @@
 /* Name: Fresh Date: February 2013 Description: A Pelican theme with clean layout. Based on Smashing HTML5 and Twitter Bootstrap. Version: 1.0.0 Author: Jui-Shan Liang Author URI: http://jsliang.com */
 body { color: #333; font-size: 15px; font-family: "Lucida Sans", sans-serif; line-height: 1.5; margin: 0; padding: 0; text-align: left; }
 
+a { color: #226ae9; }
+a:hover { color: #08c; }
+
 h1 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 16px; line-height: 3; }
 
 h2 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 16px; color: #113D8B; line-height: 2; }
 
-h3 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 16px; text-decoration: underline; color: #000; line-height: 1.5; }
+h3 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 15px; text-decoration: underline; color: #000; line-height: 1.5; }
 
 h4 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 15px; color: #000; }
 

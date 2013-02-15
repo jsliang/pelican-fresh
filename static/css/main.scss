@@ -24,6 +24,13 @@ body {
   text-align: left;
 }
 
+a {
+  color: rgb(34, 106, 233);
+  &:hover {
+    color: #08c;
+  }
+}
+
 @mixin headings {
   font-family: "Microsoft YaHei", Overlock, sans-serif;
   font-weight: bold;
@@ -44,7 +51,7 @@ h2 {
 
 h3 {
   @include headings;
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: underline;
   color: #000;
   line-height: 1.5;
