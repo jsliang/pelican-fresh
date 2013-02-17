@@ -118,9 +118,19 @@ pre {
   overflow: auto;
 }
 
+code, pre {
+  font-family: 'PT Mono', sans-serif;
+}
+
 blockquote {
   margin: 20px;
   font-style: normal;
+  border: 0;
+  p {
+    font-size: 15px;
+    margin-bottom: 1em;
+    font-weight: normal;
+  }
 }
 
 header, section, footer, aside, nav, article, figure {
@@ -295,18 +305,5 @@ li:last-child .hentry {
   }
   * {
     margin-bottom: .5em;
-  }
-}
-
-code, pre {
-  font-family: 'PT Mono', sans-serif;
-}
-
-blockquote {
-  border: 0;
-  p {
-    font-size: 15px;
-    margin-bottom: 1em;
-    font-weight: normal;
   }
 }

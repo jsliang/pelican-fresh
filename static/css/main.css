@@ -36,7 +36,10 @@ ol { list-style: outside decimal; margin: 1em 0 1.5em 1.5em; }
 
 pre { background-color: #eeeeee; padding: 10px; margin: 10px; overflow: auto; }
 
-blockquote { margin: 20px; font-style: normal; }
+code, pre { font-family: "PT Mono", sans-serif; }
+
+blockquote { margin: 20px; font-style: normal; border: 0; }
+blockquote p { font-size: 15px; margin-bottom: 1em; font-weight: normal; }
 
 header, section, footer, aside, nav, article, figure { display: block; }
 
@@ -89,8 +92,3 @@ li:last-child .hentry { border: 0; margin: 0; }
 #add-comment p.req { clear: both; margin: 0 0.5em 1em 0; text-align: right; }
 #add-comment input[type='submit'] { float: right; margin: 0 0.5em; }
 #add-comment * { margin-bottom: .5em; }
-
-code, pre { font-family: "PT Mono", sans-serif; }
-
-blockquote { border: 0; }
-blockquote p { font-size: 15px; margin-bottom: 1em; font-weight: normal; }
