@@ -46,7 +46,7 @@ a {
 h1 {
   @include headings;
   font-size: $h1size;
-  line-height: $h1size * 3;
+  line-height: $h1size * 2;
 }
 
 h2 {
