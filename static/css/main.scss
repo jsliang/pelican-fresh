@@ -1,4 +1,11 @@
 $padding: 1em;
+$bodysize: 15px;
+$h1size: $bodysize * 2;
+$h2size: $h1size * 4/5;
+$h3size: $h2size * 9/10;
+$h4size: $h3size * 9/10;
+$h5size: $h4size * 9/10;
+$h6size: $h5size * 9/10;
 
 @import url("pygment.css");
 
@@ -16,9 +23,9 @@ $padding: 1em;
 
 body {
   color: #333;
-  font-size: 15px;
+  font-size: $bodysize;
   font-family: "Lucida Sans", sans-serif;
-  line-height: 1.5;
+  line-height: $bodysize * 1.5;
   margin: 0;
   padding: 0;
   text-align: left;
@@ -38,41 +45,43 @@ a {
 
 h1 {
   @include headings;
-  font-size: 16px;
-  line-height: 3;
+  font-size: $h1size;
+  line-height: $h1size * 3;
 }
 
 h2 {
   @include headings;
-  font-size: 16px;
+  font-size: $h2size;
   color: #113D8B;
-  line-height: 2;
+  line-height: $h2size * 2;
 }
 
 h3 {
   @include headings;
-  font-size: 15px;
-  text-decoration: underline;
+  font-size: $h3size;
   color: #000;
-  line-height: 1.5;
+  line-height: $h3size * 2;
 }
 
 h4 {
   @include headings;
-  font-size: 15px;
+  font-size: $h4size;
   color: #000;
+  line-height: $h4size * 2;
 }
 
 h5 {
   @include headings;
-  font-size: 15px;
-  color: #777;
+  font-size: $h5size;
+  color: #666;
+  line-height: $h5size * 2;
 }
 
 h6 {
   @include headings;
-  font-size: 15px;
-  color: #666;
+  font-size: $h6size;
+  color: #777;
+  line-height: $h6size * 2;
 }
 
 hr {
@@ -229,7 +238,6 @@ li:last-child .hentry {
 }
 
 .entry-title {
-  font-size: 16px;
   margin-bottom: 10px;
   margin-top: 0;
   a {
@@ -241,7 +249,6 @@ li:last-child .hentry {
       color: #113D8B;
     }
     &:visited {
-      background-color: #fff;
     }
   }
 }
@@ -306,4 +313,9 @@ li:last-child .hentry {
   * {
     margin-bottom: .5em;
   }
+}
+
+// overwriting pygment.css
+.err {
+  border: 0;
 }

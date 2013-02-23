@@ -2,22 +2,22 @@
 @import url(http://fonts.googleapis.com/css?family=Overlock:400,700,900);
 @import url(http://fonts.googleapis.com/css?family=PT+Mono);
 /* Name: Fresh Date: February 2013 Description: A Pelican theme with clean layout. Based on Smashing HTML5 and Twitter Bootstrap. Version: 1.0.0 Author: Jui-Shan Liang Author URI: http://jsliang.com */
-body { color: #333; font-size: 15px; font-family: "Lucida Sans", sans-serif; line-height: 1.5; margin: 0; padding: 0; text-align: left; }
+body { color: #333; font-size: 15px; font-family: "Lucida Sans", sans-serif; line-height: 22.5px; margin: 0; padding: 0; text-align: left; }
 
 a { color: #226ae9; }
 a:hover { color: #08c; }
 
-h1 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 16px; line-height: 3; }
+h1 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 30px; line-height: 90px; }
 
-h2 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 16px; color: #113D8B; line-height: 2; }
+h2 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 24px; color: #113D8B; line-height: 48px; }
 
-h3 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 15px; text-decoration: underline; color: #000; line-height: 1.5; }
+h3 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 21.6px; color: #000; line-height: 43.2px; }
 
-h4 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 15px; color: #000; }
+h4 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 19.44px; color: #000; line-height: 38.88px; }
 
-h5 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 15px; color: #777; }
+h5 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 17.496px; color: #666; line-height: 34.992px; }
 
-h6 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 15px; color: #666; }
+h6 { font-family: "Microsoft YaHei", Overlock, sans-serif; font-weight: bold; font-size: 15.7464px; color: #777; line-height: 31.4928px; }
 
 hr { border: 2px solid #eeeeee; }
 
@@ -72,10 +72,9 @@ li:last-child .hentry { border: 0; margin: 0; }
 
 .hentry img { display: none; }
 
-.entry-title { font-size: 16px; margin-bottom: 10px; margin-top: 0; }
+.entry-title { margin-bottom: 10px; margin-top: 0; }
 .entry-title a:link, .entry-title a:visited { text-decoration: none; color: #333; }
 .entry-title a:hover { color: #113D8B; }
-.entry-title a:visited { background-color: #fff; }
 
 #posts-list { list-style: none; margin: 0; padding: 1em; }
 
@@ -92,3 +91,5 @@ li:last-child .hentry { border: 0; margin: 0; }
 #add-comment p.req { clear: both; margin: 0 0.5em 1em 0; text-align: right; }
 #add-comment input[type='submit'] { float: right; margin: 0 0.5em; }
 #add-comment * { margin-bottom: .5em; }
+
+.err { border: 0; }
