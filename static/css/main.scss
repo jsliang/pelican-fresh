@@ -320,3 +320,33 @@ li:last-child .hentry {
 .err {
   border: 0;
 }
+
+#cloud {
+  padding: 2px;
+  line-height: 2em;
+  text-align: center;
+  margin: 0;
+}
+#cloud a {
+  padding: 0px;
+}
+#cloud li {
+  display: inline;
+}
+
+li.tag-4 {
+  font-size: 0.8em;
+  font-weight: 100;
+}
+li.tag-3 {
+  font-size: 1.0em;
+  font-weight: 200;
+}
+li.tag-2 {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+li.tag-1 {
+  font-size: 1.4em;
+  font-weight: 400;
+}
