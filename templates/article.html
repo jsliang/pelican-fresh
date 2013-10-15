@@ -9,10 +9,29 @@
            title="Permalink to {{ article.title|striptags }}">{{ article.title}}</a></h1>
       {% include 'twitter.html' %}
     </header>
-
     <div class="entry-content">
       {% include 'article_infos.html' %}
+
+      {% if SHARETHIS_PUB_KEY %}
+      <div class="sharethis-top">
+        <span class='st_fblike_hcount' displayText='Facebook Like'></span>
+        <span class='st_plusone_hcount' displayText='Google +1'></span>
+        <span class='st_twitter_hcount' displayText='Tweet'></span>
+        <span class='st_email_hcount' displayText='Email'></span>
+      </div>
+      {% endif %}
+
       {{ article.content }}
+
+      {% if SHARETHIS_PUB_KEY %}
+      <div class="sharethis-bottom">
+        <span class='st_fblike_hcount' displayText='Facebook Like'></span>
+        <span class='st_plusone_hcount' displayText='Google +1'></span>
+        <span class='st_twitter_hcount' displayText='Tweet'></span>
+        <span class='st_email_hcount' displayText='Email'></span>
+      </div>
+      {% endif %}
+
     </div><!-- /.entry-content -->
     {% if DISQUS_SITENAME %}
     <div class="comments">

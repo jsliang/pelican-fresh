@@ -15,6 +15,7 @@ You can watch a live demo for the Fresh theme [here](http://jsliang.com/pelican-
 *   **Google Custom Search Engine** -- use this as your search bar!
 *   **Hide categories from menu**
 *   Syntax highlighting for code blocks
+*   ShareThis
 
 ## Settings
 
@@ -46,6 +47,12 @@ The theme also provides these global variables:
 *   `HIDE_CATEGORIES_FROM_MENU = True`
 
     If you want to hide categories from menu, you can do so by setting `HIDE_CATEGORIES_FROM_MENU` to `True` in your configuration.
+
+*   `SHARETHIS_PUB_KEY = 'your ShareThis Pub Key'`
+
+    The Fresh theme allows you to use [ShareThis](http://www.sharethis.com/) for social plugins.
+
+    Find the **Pub Key** of your ShareThis Account in ShareThis's [Account Dashboard](http://www.sharethis.com/account/). Assign this ID to the `SHARETHIS_PUB_KEY` variable in your configuration, and two rows of social plugin buttons will appear before and after your article respectively.
 
 
 ## License

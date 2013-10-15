@@ -254,6 +254,21 @@ li:last-child .hentry {
   }
 }
 
+.sharethis {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.sharethis-top {
+  @extend .sharethis;
+  text-align: right;
+}
+
+.sharethis-bottom {
+  @extend .sharethis;
+  text-align: left;
+}
+
 #posts-list {
   list-style: none;
   margin: 0;
