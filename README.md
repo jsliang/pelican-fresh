@@ -5,6 +5,10 @@ This theme uses HTML5 and its layout is responsive -- thanks to [Smashing HTML5]
 
 You can watch a live demo for the Fresh theme [here](http://jsliang.com/pelican-fresh-demo/blog/).
 
+** Note **
+
+Make sure to set the ``RELATIVE_URLS`` global varibles to `False` to generate correct Facebook meta tags and canonical links.
+
 ## Features
 
 *   Google Analytics
