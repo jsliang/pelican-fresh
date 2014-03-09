@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}{{ page.title }} | {% endblock %}
-{% block ogtitle %}{{ page.title|striptags }} | {% endblock %}
+{% block title %}{{ page.title }} | {{ SITENAME }}{% endblock %}
+{% block ogtitle %}{{ page.title|striptags }}{% endblock %}
 {% block ogurl %}{{ SITEURL }}/{{ page.url }}{%endblock%}%}
 {% block canonicalurl %}{{ SITEURL }}/{{ page.url }}{%endblock%}
 
