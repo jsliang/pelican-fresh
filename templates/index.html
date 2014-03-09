@@ -1,50 +1,93 @@
 {% extends "base.html" %}
 {% block content_title %}{% endblock %}
+
 {% block content %}
-{% if articles %}
-    {% for article in articles_page.object_list %}
-        {% if loop.length > 0 %}
-            {% if loop.first %}
-            <section>
-                <ol id="posts-list" class="hfeed" start="{{ articles_paginator.per_page -1 }}">
-            {% endif %}
-                <li>
-                    <article>
-                        <header>
-                            <h1 class="entry-title">
-                                <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
-                                   {{ article.title }}
-                                </a>
-                            </h1>
-                        </header>
-
-                        <div class="entry-content">
-                            {% include 'article_infos.html' %}
-                            {{ article.summary }}
-                            <p class="readmore">
-                                <a class="btn btn-info" href="{{ SITEURL }}/{{ article.url }}">Read more...</a>
-                            </p>
-                        </div><!-- /.entry-content -->
-
-                        <hr/>
-                    </article>
-                </li>
-            {% if loop.last %}
-                </ol><!-- /#posts-list -->
-                {% if loop.last and (articles_page.has_previous()
-                or not articles_page.has_previous() and loop.length > 1) %}
-                    {% include 'pagination.html' %}
+<div class="span9">
+    {% if articles %}
+        {% for article in articles_page.object_list %}
+            {% if loop.length > 0 %}
+                {% if loop.first %}
+                <section>
+                    <ol id="posts-list" class="hfeed" start="{{ articles_paginator.per_page -1 }}">
                 {% endif %}
-            </section><!-- /#content -->
+                    <li>
+                        <article>
+                            <header>
+                                <h1 class="entry-title">
+                                    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+                                       {{ article.title }}
+                                    </a>
+                                </h1>
+                            </header>
+                            <div class="entry-content">
+                                {% include 'article_infos.html' %}
+                                {{ article.summary }}
+                                <p class="readmore">
+                                    <a class="btn btn-small btn-info" href="{{ SITEURL }}/{{ article.url }}">Read more...</a>
+                                </p>
+                            </div><!-- /.entry-content -->
+                            <hr/>
+                        </article>
+                    </li>
+                {% if loop.last %}
+                    </ol><!-- /#posts-list -->
+                    {% if loop.last and (articles_page.has_previous()
+                    or not articles_page.has_previous() and loop.length > 1) %}
+                        {% include 'pagination.html' %}
+                    {% endif %}
+                </section><!-- /#content -->
+                {% endif %}
             {% endif %}
-        {% endif %}
-    {% endfor %}
-{% else %}
-<section  >
-<h2>Pages</h2>
-    {% for page in PAGES %}
-        <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
-    {% endfor %}
-</section>
-{% endif %}
+        {% endfor %}
+    {% else %}
+    <section  >
+    <h2>Pages</h2>
+        {% for page in PAGES %}
+            <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
+    </section>
+    {% endif %}
+</div>
 {% endblock content %}
+
+{% block sidebar %}
+<div class="span3">
+    <section id="sidebar">
+    {% if LINKS %}
+            <div>
+                <h2>Links</h2>
+                <ul>
+                {% for name, link in LINKS %}
+                    <li><a href="{{ link }}">{{ name }}</a></li>
+                {% endfor %}
+                </ul>
+            </div><!-- /.Links -->
+    {% endif %}
+    {% if SOCIAL %}
+            <div>
+                <h2>Social</h2>
+                <ul>
+                    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                    {% if FEED_ALL_RSS %}
+                    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate">rss feed</a></li>
+                    {% endif %}
+
+                {% for name, link in SOCIAL %}
+                    <li><a href="{{ link }}">{{ name }}</a></li>
+                {% endfor %}
+                </ul>
+            </div><!-- /.social -->
+    {% endif %}
+    {% if TAG_CLOUD_STEPS %}
+            <div>
+                <h2>Tags</h2>
+                <ul id="cloud">
+                     {% for tag in tag_cloud %}
+                     <li class="tag-{{ tag.1 }}"><a href="{{ SITEURL }}/{{ tag.0.url }}">{{ tag.0 }}</a></li>
+                     {% endfor %}
+                </ul>
+             </div>
+    {% endif %}<!-- /.Tags -->
+    </section><!-- /#sidebar -->
+</div>
+{% endblock %}

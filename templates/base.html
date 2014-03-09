@@ -64,49 +64,8 @@
     <div class="row-fluid">
         <div class="span10 offset1">
             <div class="row-fluid">
-                <div class="span10">
-                    {% block content %}
-                    {% endblock %}
-                </div>
-                <div class="span2">
-                    <section id="sidebar">
-                    {% if LINKS %}
-                            <div>
-                                <h2>Links</h2>
-                                <ul>
-                                {% for name, link in LINKS %}
-                                    <li><a href="{{ link }}">{{ name }}</a></li>
-                                {% endfor %}
-                                </ul>
-                            </div><!-- /.Links -->
-                    {% endif %}
-                    {% if SOCIAL %}
-                            <div>
-                                <h2>Social</h2>
-                                <ul>
-                                    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate">atom feed</a></li>
-                                    {% if FEED_ALL_RSS %}
-                                    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate">rss feed</a></li>
-                                    {% endif %}
-
-                                {% for name, link in SOCIAL %}
-                                    <li><a href="{{ link }}">{{ name }}</a></li>
-                                {% endfor %}
-                                </ul>
-                            </div><!-- /.social -->
-                    {% endif %}
-                    {% if TAG_CLOUD_STEPS %}
-                            <div>
-                                <h2>Tags</h2>
-                                <ul id="cloud">
-                                     {% for tag in tag_cloud %}
-                                     <li class="tag-{{ tag.1 }}"><a href="{{ SITEURL }}/{{ tag.0.url }}">{{ tag.0 }}</a></li>
-                                     {% endfor %}
-                                </ul>
-                             </div>
-                    {% endif %}<!-- /.Tags -->
-                    </section><!-- /#sidebar -->
-                </div>
+                {% block content %}{% endblock %}
+                {% block sidebar %}{% endblock %}
             </div>
         </div>
     </div>
