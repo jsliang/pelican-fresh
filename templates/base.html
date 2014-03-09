@@ -4,7 +4,7 @@
     <meta property="og:title" content="{% block ogtitle %}{{ SITENAME }}{%endblock%}"/>
     <meta property="og:url" content="{% block ogurl %}{{ SITEURL }}{%endblock%}"/>
     <meta property="og:site_name" content="{{ SITENAME }}"/>
-    <meta property="og:type" content="blog"/>
+    <meta property="og:type" content="{% block ogtype %}website{%endblock%}"/>
 
     <link rel="canonical" href="{% block canonicalurl %}{{ SITEURL }}{%endblock%}" />
 
