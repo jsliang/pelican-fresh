@@ -1,2 +1,5 @@
 {% extends "index.html" %}
-{% block title %}{{ SITENAME }} - {{ author }} | {% endblock %}
+{% block title %}{{ SITENAME }} - {{ author }}{% endblock %}
+{% block ogtitle %}{{ SITENAME }} - {{ author }}{% endblock %}
+{% block ogurl %}{{ SITEURL }}/{{ author.url }}{%endblock%}
+{% block canonicalurl %}{{ SITEURL }}/{{ author.url }}{%endblock%}

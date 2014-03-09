@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title }} | {% endblock %}
+{% block ogtitle %}{{ page.title|striptags }} | {% endblock %}
+{% block ogurl %}{{ SITEURL }}/{{ page.url }}{%endblock%}%}
+{% block canonicalurl %}{{ SITEURL }}/{{ page.url }}{%endblock%}
+
 {% block content %}        
 <section  >    
     <h1 class="entry-title">{{ page.title }}</h1>
