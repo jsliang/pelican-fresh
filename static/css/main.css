@@ -93,6 +93,23 @@ ol {
   margin-top: 1em;
   font-weight: bold; }
 
+.archive_row {
+  font-family: "Microsoft YaHei", Overlock, sans-serif; }
+  .archive_row .archive_year {
+    color: #113D8B;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 24px;
+    text-align: center; }
+  .archive_row .archive_month {
+    color: #000;
+    font-size: 21.6px;
+    font-weight: bold;
+    margin-top: 21.6px;
+    text-align: center; }
+  .archive_row .archive_day {
+    text-align: center; }
+
 pre {
   background-color: #eeeeee;
   padding: 10px;
@@ -100,7 +117,7 @@ pre {
   overflow: auto; }
 
 code, pre {
-  font-family: "PT Mono", sans-serif; }
+  font-family: 'PT Mono', sans-serif; }
 
 blockquote {
   margin: 20px;
@@ -141,12 +158,12 @@ img.left, figure.left {
       text-decoration: none; }
     #banner h1 a:hover, #banner h1 a:active {
       color: #113D8B;
-      text-shadow: 1px 1px white; }
+      text-shadow: 1px 1px #fff; }
   #banner .nav > li > a {
     font-family: Overlock, sans-serif;
     font-weight: bold; }
     #banner .nav > li > a:hover {
-      text-shadow: 1px 1px #bbbbbb; }
+      text-shadow: 1px 1px #bbb; }
 
 #google-custom-search {
   width: 300px;

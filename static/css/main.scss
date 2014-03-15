@@ -121,6 +121,27 @@ ol {
   font-weight: bold;
 }
 
+.archive_row {
+  font-family: "Microsoft YaHei", Overlock, sans-serif;
+  .archive_year{
+    color: #113D8B;
+    font-size: $h2size;
+    font-weight: bold;
+    margin-top: $h2size;
+    text-align: center;
+  }
+  .archive_month{
+    color: #000;
+    font-size: $h3size;
+    font-weight: bold;
+    margin-top: $h3size;
+    text-align: center;
+  }
+  .archive_day {
+    text-align: center;
+  }
+}
+
 pre {
   background-color: #eeeeee;
   padding: 10px;

@@ -9,12 +9,34 @@
     <section>
     <h1>{% block content_title %}Archives for {{ SITENAME }}{% endblock %}</h1>
 
-    <dl>
     {% for article in dates %}
-        <dt>{{ article.date.strftime('%Y-%m-%d') }}</dt>
-        <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+        {% set this_year = article.date.strftime('%Y') %}
+        {% set this_month = article.date.strftime('%b') %}
+        {% set this_day = article.date.strftime('%d') %}
+        {% if this_year != prev_year %}
+        <div class="row-fluid archive_row">
+            <div class="span1 archive_year">{{ this_year }}</div>
+        </div>
+        {% endif %}
+        {% if this_month != prev_month %}
+        <div class="row-fluid archive_row">
+            <div class="offset1 span1 archive_month">{{ this_month }}</div>
+        </div>
+        {% endif %}
+        <div class="row-fluid archive_row">
+            {% if this_day != prev_day %}
+                <div class="offset1 span1 archive_day">
+                {{ this_day }}
+                </div>
+            {% endif %}
+            <div class="{% if this_year == prev_year and this_month == prev_month and this_day == prev_day %}offset2 {% endif %}span10">
+                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+            </div>
+        </div>
+        {% set prev_year = this_year %}
+        {% set prev_month = this_month %}
+        {% set prev_day = this_day %}
     {% endfor %}
-    </dl>
     </section>
 </div>
 {% endblock %}
