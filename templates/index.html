@@ -56,6 +56,34 @@
 {% block sidebar %}
 <div class="span3">
     <section id="sidebar">
+            <div>
+                <h2>Browse content by</h2>
+                <ul class="fa-ul">
+              {% if CATEGORIES_SAVE_AS %}
+                <li><a href="{{ SITEURL }}/{{ CATEGORIES_SAVE_AS }}"><i class="fa-li fa fa-tags"></i> Categories</a></li>
+              {% endif %}
+              {% if ARCHIVES_SAVE_AS %}
+                <li><a href="{{ SITEURL }}/{{ ARCHIVES_SAVE_AS }}"><i class="fa-li fa fa-calendar"></i> Dates</a></li>
+              {% endif %}
+              {% if TAGS_SAVE_AS %}
+                <li><a href="{{ SITEURL }}/{{ TAGS_SAVE_AS }}"><i class="fa-li fa fa-tag"></i> Tags</a></li>
+              {% endif %}
+
+              {% if TAG_FEED_ATOM and tag is defined %}
+                <li><a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}"><i class="fa-li fa fa-rss"></i> Feed</a></li>
+              {% elif TAG_FEED_RSS and tag is defined %}
+                <li><a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}"><i class="fa-li fa fa-rss"></i> Feed</a></li>
+              {% elif CATEGORY_FEED_ATOM and category is defined %}
+                <li><a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}"><i class="fa-li fa fa-rss"></i> Feed</a></li>
+              {% elif CATEGORY_FEED_RSS and category is defined %}
+                <li><a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}"><i class="fa-li fa fa-rss"></i> Feed</a></li>
+              {% elif FEED_ALL_ATOM %}
+                <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}"><i class="fa-li fa fa-rss"></i> Feed</a></li>
+              {% elif FEED_ALL_RSS %}
+                <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}"><i class="fa-li fa fa-rss"></i> Feed</a></li>
+                {% endif %}
+                </ul>
+            </div><!-- /.browse -->
     {% if LINKS %}
             <div>
                 <h2>Links</h2>
