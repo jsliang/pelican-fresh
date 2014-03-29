@@ -7,7 +7,7 @@ You can watch a live demo for the Fresh theme [here](http://jsliang.com/pelican-
 
 **Note**
 
-Make sure not to set the ``RELATIVE_URLS`` global varibles to `True` (default value is `False`) so that correct Facebook meta tags and canonical links are generated correctly.
+Make sure not to set the ``RELATIVE_URLS`` global varibles to `True` (the default value is `False`) so that Facebook meta tags and canonical links are generated correctly.
 
 ## Features
 
