@@ -24,7 +24,7 @@
         </div>
         {% endif %}
         <div class="row-fluid archive_row">
-            {% if this_day != prev_day %}
+            {% if this_month != prev_month or this_day != prev_day %}
                 <div class="offset1 span1 archive_day">
                 {{ this_day }}
                 </div>
