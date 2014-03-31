@@ -18,7 +18,7 @@
             <div class="span1 archive_year">{{ this_year }}</div>
         </div>
         {% endif %}
-        {% if this_month != prev_month %}
+        {% if this_year != prev_year or this_month != prev_month %}
         <div class="row-fluid archive_row">
             <div class="offset1 span1 archive_month">{{ this_month }}</div>
         </div>
