@@ -15,10 +15,10 @@
     <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />
 
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css" />
     {% if FEED_ALL_ATOM %}
     <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
     {% endif %}
