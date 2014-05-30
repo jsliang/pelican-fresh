@@ -61,7 +61,7 @@ The theme also provides these global variables:
 
 ## License
 
-Copyright (c) 2013, Jui-Shan Liang &lt;jenny@jsliang.com&gt;
+Copyright (c) 2013-2014, Jui-Shan Liang &lt;jenny@jsliang.com&gt;
 
 All rights reserved.
 
