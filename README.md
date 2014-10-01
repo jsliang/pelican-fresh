@@ -89,3 +89,4 @@ If you're using Fresh and would like your site to be listed here, feel free to e
 *    [The Wagner](http://thewagner.net/)
 *    [umop apisdn](http://jbaber.freeshell.org/)
 *    [v2in](http://v2in.com/)
+*    [jiezi](http://jiezi.me/)
