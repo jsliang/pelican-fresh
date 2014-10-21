@@ -53,8 +53,8 @@
                             <li><a href="{{ link }}">{{ title }}</a></li>
                         {% endfor %}
                         {% if DISPLAY_PAGES_ON_MENU %}
-                        {% for page in PAGES %}
-                            <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+                        {% for pa in PAGES %}
+                            <li {% if pa == page %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ pa.url }}">{{ pa.title }}</a></li>
                         {% endfor %}
                         {% endif %}
                         {% if not HIDE_CATEGORIES_FROM_MENU %}
