@@ -90,3 +90,4 @@ If you're using Fresh and would like your site to be listed here, feel free to e
 *    [umop apisdn](http://jbaber.freeshell.org/)
 *    [v2in](http://v2in.com/)
 *    [jiezi](http://jiezi.me/)
+*    [Euler's Note](http://www.yiwusuozhi.com/)
