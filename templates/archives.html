@@ -13,29 +13,26 @@
         {% set this_year = article.date.strftime('%Y') %}
         {% set this_month = article.date.strftime('%b') %}
         {% set this_day = article.date.strftime('%d') %}
-        {% if this_year != prev_year %}
+        {% if article.date.year != dates[loop.index0 - 1].date.year %}
         <div class="row-fluid archive_row">
             <div class="span1 archive_year">{{ this_year }}</div>
         </div>
         {% endif %}
-        {% if this_year != prev_year or this_month != prev_month %}
+        {% if article.date.year != dates[loop.index0 - 1].date.year or article.date.month != dates[loop.index0 - 1].date.month %}
         <div class="row-fluid archive_row">
             <div class="offset1 span1 archive_month">{{ this_month }}</div>
         </div>
         {% endif %}
         <div class="row-fluid archive_row">
-            {% if this_month != prev_month or this_day != prev_day %}
+            {% if article.date.month != dates[loop.index0 - 1].date.month or article.date.day != dates[loop.index0 - 1].date.day %}
                 <div class="offset1 span1 archive_day">
                 {{ this_day }}
                 </div>
             {% endif %}
-            <div class="{% if this_year == prev_year and this_month == prev_month and this_day == prev_day %}offset2 {% endif %}span10">
+            <div class="{% if article.date.year == dates[loop.index0 - 1].date.year and article.date.month == dates[loop.index0 - 1].date.month and article.date.day == dates[loop.index0 - 1].date.day %}offset2 {% endif %}span10">
                 <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
             </div>
         </div>
-        {% set prev_year = this_year %}
-        {% set prev_month = this_month %}
-        {% set prev_day = this_day %}
     {% endfor %}
     </section>
 </div>
